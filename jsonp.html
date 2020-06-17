@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--  <link rel="stylesheet" href="../bootstrap.min.css"> -->
+</head>
+<style>
+    #div1{width: 100px;width: 100px;background-color: red;}
+</style>
+<script >
+    window.onload = function(){
+        var oDiv = document.getElementById("div1");
+        var id = oDiv.id;
+        oDiv.onclick = function(){
+            alert(id);
+        }
+        oDiv = null;//把oDiv占据的位置设置为空
+        alert(id);
+    }
+</script>
+<body>
+    <div id = "div1"></div>
+</body>
+</html>
